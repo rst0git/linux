@@ -1344,7 +1344,7 @@ static int gfs2_set_cookies(struct gfs2_sbd *sdp, struct buffer_head *bh,
 {
 	int sort_id = -1;
 	int i;
-	
+
 	for (i = 0; i < entries; i++) {
 		unsigned offset;
 
@@ -1368,7 +1368,7 @@ static int gfs2_set_cookies(struct gfs2_sbd *sdp, struct buffer_head *bh,
 		darr[i]->de_cookie |= offset;
 	}
 	return sort_id;
-}	
+}
 
 
 static int gfs2_dir_read_leaf(struct inode *inode, struct dir_context *ctx,

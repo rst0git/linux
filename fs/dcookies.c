@@ -187,7 +187,7 @@ static int do_lookup_dcookie(u64 cookie64, char __user *buf, size_t len)
 	}
 
 	err = -ERANGE;
- 
+
 	pathlen = kbuf + PAGE_SIZE - path;
 	if (pathlen <= len) {
 		err = pathlen;
@@ -311,7 +311,7 @@ static void dcookie_exit(void)
 struct dcookie_user {
 	struct list_head next;
 };
- 
+
 struct dcookie_user * dcookie_register(void)
 {
 	struct dcookie_user * user;
